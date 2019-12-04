@@ -1,0 +1,26 @@
+{
+  "name": "@sdp.nd/material-js",
+  "version": "1.0.0",
+  "description": "⛱ A UI framework for React Native",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "node_modules/@babel/cli/bin/babel.js src --out-dir dist",
+    "clean": "rm -rf dist",
+    "rebuild": "npm run clean && npm run build"
+  },
+  "keywords": [],
+  "author": "nd",
+  "license": "ISC",
+  "dependencies": {
+    "color": "2.0.1",
+    "deepmerge": "3.3.0",
+    "hoist-non-react-statics": "3.3.0",
+    "react-lifecycles-compat": "3.0.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "metro-react-native-babel-preset": "^0.55.0",
+    "react": "16.8.3",
+    "react-native": "0.59.9"
+  }
+}

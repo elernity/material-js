@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "example-install": "cd example && npm i",
+    "lib-install": "cd lib && npm i",
+    "install": "npm run example-install && npm run lib-install",
+    "build": "cd lib && npm run build",
+    "clean": "cd lib && npm run clean",
+    "rebuild": "cd lib && npm run rebuild",
+    "example-android": "node ./scripts/addLib2Example.js && cd example && react-native run-android",
+    "example-ios": "node ./scripts/addLib2Example.js && cd example && react-native run-ios"
+  },
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "mkdirp": "^0.5.1"
+  }
+}
